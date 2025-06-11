@@ -41,6 +41,12 @@ declare -A HEALTH_CHECKS=(
     ["metrics"]="check-metrics-server.sh:Metrics Server"
     ["cert-manager"]="check-cert-manager.sh:cert-manager"
     ["hostport"]="check-hostport-conflicts.sh:Host Port Conflicts"
+    ["containerd"]="check-containerd.sh:Containerd Runtime Health"
+    ["versions"]="check-k8s-versions.sh:Kubernetes Version Compatibility"
+    ["kubelet"]="check-kubelet.sh:Kubelet Health"
+    ["kube-proxy"]="check-kube-proxy.sh:Kube-proxy Detailed Analysis"
+    ["certificates"]="check-certificates.sh:Cluster Certificates"
+    ["registry"]="check-image-registry.sh:Image Registry Health"
 )
 
 # Usage function
